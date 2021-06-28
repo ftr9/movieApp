@@ -1,4 +1,4 @@
-#Movie App 
+# Movie App 
 This project is made with pure react js .... This  project lets you search all the lists of popular,most liked,most rated,now playing ,going to be launched movies with trailer and all sorts of available details 
 
 # Getting Started with Create React App
