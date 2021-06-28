@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root {
+    position: relative;
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+/*Tabs*/
+
+.activeTab {
+    background-color: black;
+    width: 90%;
+    margin-left: 10%;
+    color: white;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detailPage {
+    height: 100vh;
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.loadingdetail {
+    display: flex;
+    flex-direction: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.MuiSkeleton-root {
+    background-color: gray !important;
+}
+
+.videPlayIframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000000;
 }
